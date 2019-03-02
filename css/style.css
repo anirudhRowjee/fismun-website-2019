@@ -1,0 +1,82 @@
+body{
+	background-color: #;
+}
+
+nav{
+	background-color: #1735F5;
+  	overflow: hidden;
+}
+
+nav a{
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	text-decoration: none;
+	font-size: 17px;
+	color:black;
+}
+
+nav a:hover{
+	background-color: #20639B;
+  	color: black;
+}
+
+nav a.active{
+	background-color: #F6d55c;
+  	color: black;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.address{
+	padding: 10px;
+}
+
+#school-logo{
+	size: 50%;
+	padding: 5px;
+	height: 400px;
+	width: 400px;
+}
+
+#address-header{
+	width: 100%;
+	padding: 5px;
+}
+
+#principal-image{
+	height: 200px;
+	width: 150px;
+	float: left;
+	padding: 5px;
+}
+
+.container{
+	padding: 5px;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+footer{
+	padding-top: 10px;
+	padding-bottom: 0px;
+	float: bottom;
+}
