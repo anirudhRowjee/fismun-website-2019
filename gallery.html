@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+	<link rel="stylesheet" href='css/style.css'>
+    
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <script src="js/scripts.js"></script>
+
+	<nav class="topnav" id="mytopnav">
+		<a href='index.html'> Home </a>
+		<a href='eb.html'> Executive Board </a>
+		<a href='committees.html'> Committees </a>
+		<a href='register.html'> Register </a>
+        <a href='gallery.html' class='active'> Gallery </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+	</nav>
+	<title> FISMUN - Gallery</title>
+</head>
+
+
+<body class="text-center" align="center">
+    <div class='container-fluid btn-container' align="center">
+        <br>
+		<h1> GALLERY </h1>
+		<br>
+	</div>
+    <br>   
+    <br>
+    <center>
+        <div class="gallery w-75 h-50 m-5"id="gallery">
+        
+            
+            <div class="gallery_btn">
+                <a  class="mt-4 pt-4" id="previous" style="float: left;" onclick="previous_img();"><i class="fa fa-angle-left"></i></a>
+                <img id="img">
+                <a  class="mt-4 pt-4" id="next" style="float: right;" onclick="next_img();" ><i class="fa fa-angle-right"></i></a>
+            </div>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </center>
+    
+    
+    
+    <script>
+        var c = document.getElementById("gallery");
+        var i,photo_id,photo,final;
+        
+        function sleep(ms) {
+              return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        async function changebg() {
+            while (1==1){
+              for (i=1; i<11; i++) {
+                photo_id = "img"+"("+String(i)+")";
+                console.log(photo_id);
+                photo = document.getElementById("img");
+                photo.src = "assets/Carousel-Pictures/"+photo_id+".jpeg";
+                photo.style.width="640px";
+                photo.style.height="426px";
+                console.log(c);
+                await sleep(4000);
+            };
+  
+            };
+        };
+        
+        var previous = document.getElementById("previous");
+        var next=document.getElementById("next");
+        var photo_number = 1
+        var photoid = "img"+"("+String(photo_number)+")";
+        var photo = document.getElementById("img");
+        photo.src = "assets/Carousel-Pictures/"+photoid+".jpeg";
+        photo.className += " w-75 h-25";
+        console.log(photo);
+        
+        function previous_img(){
+            if (photo_number==1){
+                photo_number=10;
+                photo_id = "img"+"("+String(photo_number)+")";
+                photo = document.getElementById("img");
+                photo.src = "assets/Carousel-Pictures/"+photo_id+".jpeg";
+                photo.style.width="inherit;";
+                photo.style.height="inherit";
+                console.log(photo);
+
+            } else{
+                photo_number=photo_number-1;
+                photo_id = "img"+"("+String(photo_number)+")";
+                photo = document.getElementById("img");
+                photo.src = "assets/Carousel-Pictures/"+photo_id+".jpeg";
+                photo.style.width="inherit;";
+                photo.style.height="inherit";
+                console.log(photo);
+            };
+        };
+        
+        function next_img(){
+            if (photo_number==10){
+                photo_number=1;
+                photo_id = "img"+"("+String(photo_number)+")";
+                photo = document.getElementById("img");
+                photo.src = "assets/Carousel-Pictures/"+photo_id+".jpeg";
+                photo.style.width="inherit;";
+                photo.style.height="inherit";
+                console.log(photo,"lol");
+
+            } else{
+                photo_number=photo_number+1;
+                photo_id = "img"+"("+String(photo_number)+")";
+                photo = document.getElementById("img");
+                photo.src = "assets/Carousel-Pictures/"+photo_id+".jpeg";
+                photo.style.width="inherit;";
+                photo.style.height="inherit";
+                console.log(photo);
+            };
+    
+        };
+        
+    </script>
+    <footer class="p-4">
+        <p> Website made by SKAR DEV 2019 </p>
+    </footer>
+	
+</body>
