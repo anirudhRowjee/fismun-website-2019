@@ -16,14 +16,14 @@ h1{
 
 /*------------------------------------------------------------------------------------------------------*/
 .topnav{
-	background-color: white;
+	background-color: darkblue;
     overflow: hidden;
-    border-bottom: 1px solid #d16812;
+    /*border-bottom: 1px solid #FF7F00;*/
 }
 
 .topnav a{
 	float: left;
-	color: #d16812;
+	color: white;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -31,15 +31,18 @@ h1{
 }
 
 .topnav a:hover{
-	background-color: skyblue;
+	background-color: #FF9966;
   	color: #4c2200;
 }
 
 .active{
-	background-color: darkblue;
-  	color: #d16812;
-    border-right: 1px solid #d16812;
-    border-left: 1px solid #d16812;
+	background-color: #FF7F00;
+  	color: white;
+    
+}
+
+.active a{
+	color: white;
 }
 
 .topnav .icon {
@@ -92,7 +95,7 @@ a:hover{
 }
 
 .btn-container{
-    background-color: #d16812;
+    background-color: #FF7F00;
 }
 
 .btn-orange{
@@ -109,6 +112,7 @@ a:hover{
 #address-header{
 	width: 100%;
 	padding: 5px;
+	background-color: #FF7F00;
 }
 
 #principal-image{
