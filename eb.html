@@ -4,55 +4,64 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href='css/style.css'>
-	<nav>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/scripts.js"></script>
+	<nav class="topnav" id="mytopnav">
 		<a href='index.html'> Home </a>
 		<a href='eb.html' class='active'> Executive Board </a>
 		<a href='committees.html'> Committees </a>
 		<a href='register.html'> Register </a>
-
-		<title> FISMUN - Executive Board</title>
+        <a href='gallery.html'> Gallery </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
 	</nav>
+    <title> FISMUN - Executive Board</title>
 </head>
-<body>
-	<div class='container' align="center">
+<body class="text-center">
+	<div class='container-fluid btn-container' align="center">
+        <br>
 		<h1> EXECUTIVE BOARD </h1>
-			<br>
-			<div class="address card">
-				<h2 id='address-header'> ECOFIN </h2>
-				<br>
-				<div class="address-text">
-						<p>Abhay Bestrapalli</p>
-						<p>Ajay Bestrapalli</p>
-				</div>
-			</div>
-
-			<br>
-
-			<div class="address card">
-				<h2 id='address-header'> UNSC-CTC </h2>
-				<br>
-				<div class="address-text">
-						<p>Devansh Mathur</p>
-						<p>Shlok</p>
-						<p>Vedant Panamgipalli</p>
-				</div>
-			</div>
-
-			<br>
-
-			<div class="address card">
-				<h2 id='address-header'> COSN </h2>
-				<br>
-				<div class="address-text">
-						<p>Sneh Lahurikar</p>
-						<p>Rohan</p>
-				</div>
-			</div>
-
-			<br>
-
-		<footer>
-			<p> Website made by SKAR DEV 2019 </p>
-		</footer>
+        <br>
 	</div>
+    <div class="address container-fluid p-5">
+        <div class="card">
+            <h2 id='address-header'> ECOFIN </h2>
+            <br>
+            <div class="address-text m-3">
+                <h2>Chair-person</h2>
+                <p>Abhay Bestrapalli</p>
+                <h2>Vice Chair-person</h2>
+                <p>Ajay Bestrapalli</p>
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <h2 id='address-header'> UNSC-CTC </h2>
+            <br>
+            <div class="address-text m-3">
+                <h2>Chair-person</h2>
+                <p>Devansh Mathur</p>
+                <h2>Co Chair-person</h2>
+                <p>Shlok</p>
+                <p>Vedant Panamgipalli</p>
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <h2 id='address-header'> COSN </h2>
+            <br>
+            <div class="address-text m-3">
+                <h2>Chair-person</h2>
+                <p>Sneh Lahurikar</p>
+                <h2>Vice Chair-person</h2>
+                <p>Rohan</p>
+            </div>
+        </div>
+    </div>
+			
+
+    <footer class="p-4">
+			<p> Website made by SKAR DEV 2019 </p>
+    </footer>
 </body>
