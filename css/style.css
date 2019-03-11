@@ -11,7 +11,7 @@ h1{
 
 #countdown {
     color: white;
-    text-decoration: bold;    
+    text-decoration: bold;
 }
 
 /*------------------------------------------------------------------------------------------------------*/
@@ -38,7 +38,7 @@ h1{
 .active{
 	background-color: #FF7F00;
   	color: white;
-    
+
 }
 
 .active a{
@@ -101,7 +101,7 @@ a:hover{
 .btn-orange{
     background-color: blue;
     color: white;
-    
+
 }
 
 
